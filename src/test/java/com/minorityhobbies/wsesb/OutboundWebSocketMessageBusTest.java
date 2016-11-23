@@ -48,6 +48,7 @@ public class OutboundWebSocketMessageBusTest extends AbstractWebSocketTestCase {
 
         assertMessageReceived(() -> wireMessage, 5L, TimeUnit.SECONDS);
 
+        verify(session).getId();
         verifyNoMoreInteractions(session, basicRemote);
     }
 
@@ -69,6 +70,7 @@ public class OutboundWebSocketMessageBusTest extends AbstractWebSocketTestCase {
         assertEquals(headers, wireMessage.getHeaders());
         assertEquals(msg, wireMessage.getPayload());
 
+        verify(session).getId();
         verifyNoMoreInteractions(session, basicRemote);
     }
 }

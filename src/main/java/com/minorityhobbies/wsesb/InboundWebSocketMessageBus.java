@@ -38,14 +38,16 @@ public class InboundWebSocketMessageBus extends AbstractWebSocketMessageBus {
 
     @OnOpen
     public void open(Session session) {
-        logger.info(String.format("Server endpoint opened web socket message bus session: %s", session.getId()));
-        this.sessions.put(session.getId(), session);
+        String sessionId = session.getId();
+        logger.info(String.format("Server endpoint opened web socket message bus session: %s", sessionId));
+        this.sessions.put(sessionId, session);
     }
 
     @OnClose
     public void close(Session session, CloseReason closeReason) {
-        logger.info(String.format("Server endpoint closed web socket message bus session: %s", session.getId()));
-        this.sessions.remove(session.getId());
+        String sessionId = session.getId();
+        logger.info(String.format("Server endpoint closed web socket message bus session: %s", sessionId));
+        this.sessions.remove(sessionId);
     }
 
     @OnMessage
