@@ -23,7 +23,7 @@
 		<developer>
 			<id>chrisw</id>
 			<name>Chris Wraith</name>
-			<email>chrisw@minorityhobbies.com</email>
+			<email>chrisw@indigenously.net</email>
 		</developer>
 	</developers>
 	
@@ -69,14 +69,14 @@
 	<repositories>
 		<repository>
 			<id>releases-repository</id>
-			<url>https://minorityhobbies.com/maven/repositories/releases</url>
+			<url>https://indigenously.net/maven/repositories/releases</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
 		<repository>
 			<id>snapshots-repository</id>
-			<url>https://minorityhobbies.com/maven/repositories/snapshots</url>
+			<url>https://indigenously.net/maven/repositories/snapshots</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
@@ -87,12 +87,12 @@
         <repository>
             <id>releases-repository</id>
             <uniqueVersion>false</uniqueVersion>
-            <url>scpexe://minorityhobbies.com/maven/repositories/releases</url>
+            <url>scpexe://indigenously.net/maven/repositories/releases</url>
         </repository>
         <snapshotRepository>
             <id>snapshots-repository</id>
             <uniqueVersion>true</uniqueVersion> 
-            <url>scpexe://minorityhobbies.com/maven/repositories/snapshots</url>
+            <url>scpexe://indigenously.net/maven/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
